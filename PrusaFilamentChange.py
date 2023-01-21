@@ -69,7 +69,8 @@ class PrusaFilamentChange(Script):
 G60 S2 ; Save current print position
 G1 X220 Y-3.0 ; Go outside print area
 M600 ; Filament change
-M0 Remove extrusion then continue ; Pause the print
+M117 Remove extrusion then continue
+M0 ; Pause the print
 G1 R2 ; Return to saved print position
 
 
