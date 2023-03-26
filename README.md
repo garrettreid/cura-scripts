@@ -15,7 +15,7 @@ M0 Remove extrusion then continue ; Pause the print
 G1 R2 ; Return to saved print position
 ```
 
-To use, remove the extra extrusion after filament change pause, then resume. If you're printing over USB (e.g. OctoPrint), this won't be on the printer's UI.
+To use, add it as a post-processing script and enter the layer number of the first post-filament-change layer. Slice, print, and wait. After changing the filament, the printer will pause. Remove the extra extrusion, then resume. If you're printing over USB (e.g. OctoPrint), you'll need to resume from the controlling system.
 
 If you want to include a filament swap back at the end of the print, that's also an option. Check the box, and the last thing your print will do is a filament change.
 
